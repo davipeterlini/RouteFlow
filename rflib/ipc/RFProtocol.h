@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#include "IpcMessage.h"
+#include "Ipc.h"
 #include "IPAddress.h"
 #include "MACAddress.h"
 #include "converter.h"

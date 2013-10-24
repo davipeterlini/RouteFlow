@@ -124,7 +124,7 @@ namespace MatchList {
         }
 
         return builder.arr();
-    }
+    }l
 
     /**
      * Returns a vector of Matches extracted from 'bson'. 'bson' should be an

@@ -1,5 +1,5 @@
-#ifndef DATABASEIPC_H_
-#define DATABASEIPC_H_
+#ifndef MONGOIPC_H_
+#define MONGOIPC_H_
 
 #include "Ipc.h"
 #include <boost/function/function_fwd.hpp>
@@ -11,8 +11,6 @@
 
 // Handle a maximum of 10 messages at a time
 #define PENDINGLIMIT 10
-
-
 
 /**
  * This class implements a database(Mongo) version of Ipc
@@ -64,4 +62,31 @@ private:
 
 };
 
-#endif /* DATABASEIPC_H_ */
+/**
+ * This class implements a factory to build a Ipc Message object from Bson Object and vice versa
+ */
+class MongoIpcMessageFactory {
+public:
+	/**
+	 * Receives BSONObj and build an
+	 * ipc message object, based on message type
+	 *
+	 * @param mongoMessage Bson Object
+	 * @return ipc message
+	 */
+	static IpcMessage* fromMessageType(mongo::BSONObj* mongoMessage);
+
+	/**
+	 * Receives the ipc message object and build a Bson Object,
+	 * based on message type
+	 *
+	 * @param message ipc message
+	 * @return Bson Object Builder
+	 */
+	static mongo::BSONObjBuilder* fromMessageType(IpcMessage* message);
+
+private:
+	MongoIpcMessageFactory();
+};
+
+#endif /* MONGOIPC_H_ */

@@ -1,4 +1,4 @@
-#include "IpcMessage.h"
+#include "Ipc.h"
 string IpcMessage::getMessageId(){
 	return this->messageId;
 }

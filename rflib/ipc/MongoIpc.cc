@@ -1,9 +1,8 @@
 #include "MongoIpc.h"
 #include <boost/thread.hpp>
-#include "MongoFactory.h"
-#include "MongoIpcMessageFactory.h"
-#include "../defs.h"
 #include <mongo/client/dbclient.h>
+#include "../util/MongoFactory.h"
+#include "../defs.h"
 
 const string MongoIpc::FIELD_NAME::ID = "_id";
 const string MongoIpc::FIELD_NAME::FROM = "from";
@@ -11,7 +10,6 @@ const string MongoIpc::FIELD_NAME::TO = "to";
 const string MongoIpc::FIELD_NAME::TYPE = "type";
 const string MongoIpc::FIELD_NAME::READ = "read";
 const string MongoIpc::FIELD_NAME::CONTENT = "content";
-
 
 MongoIpc::MongoIpc(string userId, string channel) {
 	MongoFactory mf;

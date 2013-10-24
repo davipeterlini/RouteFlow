@@ -3,7 +3,7 @@ import bson
 import time
 
 from rflib.defs import *
-from rflib.ipc.MongoUtils import MongoFactory
+from rflib.util.MongoUtils import MongoFactory
 
 RFENTRY_IDLE_VM_PORT = 1
 RFENTRY_IDLE_DP_PORT = 2

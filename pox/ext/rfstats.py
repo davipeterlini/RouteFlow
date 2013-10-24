@@ -6,7 +6,7 @@ from pox.openflow import *
 from pox.openflow.discovery import *
 from pox.lib.addresses import *
 from pox.topology.topology import *
-from rflib.ipc.MongoUtils import MongoFactory
+from rflib.util.MongoUtils import MongoFactory
 from rflib.defs import *
 import time
 import json

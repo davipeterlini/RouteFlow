@@ -10,7 +10,7 @@ export BUILD_OBJ_DIR=$(BUILD_DIR)/obj
 export RFLIB_NAME=rflib
 
 #the lib subdirs should be done first
-export libdirs := ipc types
+export libdirs := ipc types util
 export srcdirs := rfclient
 
 export CPP := g++

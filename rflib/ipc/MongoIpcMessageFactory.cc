@@ -5,7 +5,6 @@
  *      Author: vmware
  */
 
-#include "MongoIpcMessageFactory.h"
 #include "MongoIpc.h"
 #include "RFProtocol.h"
 #include <iostream>

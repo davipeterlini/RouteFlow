@@ -15,7 +15,7 @@ public:
 	 *
 	 * @return connection to MongoDB database
 	 */
-	mongo:: DBClientBase * createConnection();
+	mongo::DBClientBase * createConnection();
 
 private:
 	string dbName;

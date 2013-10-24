@@ -6,7 +6,7 @@ import time
 import sys
 
 from rflib.ipc.Ipc import Ipc
-from rflib.ipc.MongoUtils import MongoFactory
+from rflib.util.MongoUtils import MongoFactory
 from rflib.defs import *
 
 FIELD_NAME_ID = "_id"
