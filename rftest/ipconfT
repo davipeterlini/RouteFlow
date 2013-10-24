@@ -1,0 +1,2 @@
+h1 route add default gw 192.168.124.1
+h2 route add default gw 192.168.125.1
